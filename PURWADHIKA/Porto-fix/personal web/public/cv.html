@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Rizki Hidayat</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      line-height: 1.5;
+      color: #1a1a1a;
+      background: #fff;
+    }
+
+    .page {
+      max-width: 794px;
+      margin: 0 auto;
+      padding: 48px 52px;
+    }
+
+    /* Header */
+    .header { margin-bottom: 28px; }
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      color: #000;
+      margin-bottom: 4px;
+    }
+    .header .title {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 10px;
+      letter-spacing: 0.03em;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 18px;
+      font-size: 10.5px;
+      color: #444;
+    }
+    .contact-row a { color: #444; text-decoration: none; }
+    .contact-row span::before { content: '·'; margin-right: 18px; }
+    .contact-row span:first-child::before { display: none; }
+
+    /* Divider */
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 16px 0;
+    }
+
+    /* Section */
+    .section { margin-bottom: 22px; }
+    .section-title {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    /* Profile */
+    .profile p {
+      font-size: 11px;
+      color: #333;
+      line-height: 1.65;
+    }
+
+    /* Projects */
+    .project { margin-bottom: 16px; }
+    .project:last-child { margin-bottom: 0; }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 3px;
+    }
+    .project-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #000;
+    }
+    .project-link {
+      font-size: 10px;
+      color: #888;
+      text-decoration: none;
+    }
+    .project-tech {
+      font-size: 10px;
+      color: #666;
+      margin-bottom: 5px;
+    }
+    .project-tech strong { color: #333; }
+    .project ul {
+      padding-left: 14px;
+      color: #444;
+    }
+    .project ul li {
+      font-size: 10.5px;
+      margin-bottom: 2px;
+      line-height: 1.5;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 6px 0;
+    }
+    .skill-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: #555;
+      padding-top: 1px;
+    }
+    .skill-items {
+      font-size: 10.5px;
+      color: #333;
+    }
+
+    /* Education & Experience */
+    .entry { margin-bottom: 12px; }
+    .entry:last-child { margin-bottom: 0; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2px;
+    }
+    .entry-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #000;
+    }
+    .entry-date {
+      font-size: 10px;
+      color: #888;
+    }
+    .entry-sub {
+      font-size: 10.5px;
+      color: #555;
+      margin-bottom: 4px;
+    }
+    .entry ul {
+      padding-left: 14px;
+      color: #444;
+    }
+    .entry ul li {
+      font-size: 10.5px;
+      margin-bottom: 2px;
+    }
+
+    a, a:visited, a:hover, a:active {
+      color: #333 !important;
+      text-decoration: none;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { padding: 36px 44px; }
+      @page { size: A4; margin: 0; }
+      a { color: #1a1a1a !important; text-decoration: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <div class="header">
+      <h1>Rizki Hidayat</h1>
+      <div class="title">Full-Stack Web Developer</div>
+      <div class="contact-row">
+        <span>Bekasi, Indonesia</span>
+        <span><a href="mailto:rizkitanjung63@gmail.com">rizkitanjung63@gmail.com</a></span>
+        <span><a href="https://wa.me/6281991711188">+62 819 9171 1188</a></span>
+        <span><a href="https://github.com/rizkiHid31">github.com/rizkiHid31</a></span>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Profile -->
+    <div class="section profile">
+      <div class="section-title">Profile</div>
+      <p>
+        Full-stack web developer and graduate of Purwadhika Digital Technology School.
+        Career switcher from sales, bringing strong communication skills, a client-first mindset,
+        and a results-oriented work ethic into every project. I integrate AI tools such as Claude
+        and GitHub Copilot into my development workflow as force multipliers — helping me write
+        cleaner code, debug faster, and deliver practical solutions.
+      </p>
+    </div>
+
+    <hr />
+
+    <!-- Projects -->
+    <div class="section">
+      <div class="section-title">Projects</div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">Master Even — Event Management App</span>
+          <a class="project-link" href="https://github.com/rizkiHid31/Event-Management-mini-project">github.com/rizkiHid31/Event-Management-mini-project</a>
+        </div>
+        <div class="project-tech"><strong>Stack:</strong> React 19, TypeScript, Node.js, Express, PostgreSQL, Prisma, Redis, BullMQ</div>
+        <ul>
+          <li>Built a full-stack event platform with Customer and Organizer roles and role-based route guards.</li>
+          <li>Implemented complete payment flow: upload proof → organizer confirmation → done/rejected.</li>
+          <li>Features include vouchers (percentage/fixed), wallet/points system, and post-event reviews.</li>
+          <li>Backend handles JWT auth, Cloudinary uploads, email notifications via Resend, and async jobs with BullMQ.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">Toko Alat Pancing — Fishing Gear E-Commerce</span>
+          <a class="project-link" href="https://github.com/rizkiHid31/Toko-alat-pancing">github.com/rizkiHid31/Toko-alat-pancing</a>
+        </div>
+        <div class="project-tech"><strong>Stack:</strong> React, TypeScript, Express, PostgreSQL, Midtrans, Cloudinary</div>
+        <ul>
+          <li>Three-tier monorepo: customer storefront, admin dashboard, and REST API backend.</li>
+          <li>Integrated Midtrans payment gateway and Cloudinary for image management.</li>
+          <li>Customers can browse, add to cart, checkout as guest or registered user, and track orders.</li>
+          <li>Admin panel covers product management, order processing, and dashboard analytics.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <span class="project-title">GYM Management System</span>
+          <a class="project-link" href="https://github.com/rizkiHid31/GYM-Management">github.com/rizkiHid31/GYM-Management</a>
+        </div>
+        <div class="project-tech"><strong>Stack:</strong> Next.js, TypeScript, SQLite (better-sqlite3), Tailwind CSS, shadcn/ui</div>
+        <ul>
+          <li>Monolithic full-stack app using Next.js App Router for both frontend and API routes.</li>
+          <li>Handles member registration, QR-code-based check-in, walk-in visitor tracking, and POS.</li>
+          <li>Finance dashboard with export support and role-protected staff interface.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Skills -->
+    <div class="section">
+      <div class="section-title">Skills</div>
+      <div class="skills-grid">
+        <span class="skill-label">Frontend</span>
+        <span class="skill-items">HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS</span>
+        <span class="skill-label">Backend</span>
+        <span class="skill-items">Node.js, Express, PostgreSQL, Prisma, Redis, BullMQ</span>
+        <span class="skill-label">Tools</span>
+        <span class="skill-items">Git, REST API, Cloudinary, Postman</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Education -->
+    <div class="section">
+      <div class="section-title">Education</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Purwadhika Digital Technology School</span>
+          <span class="entry-date">2024 – 2025</span>
+        </div>
+        <div class="entry-sub">Full-Stack Web Development Bootcamp</div>
+        <ul>
+          <li>Intensive program covering frontend, backend, databases, and deployment.</li>
+          <li>Completed 3 full-stack capstone projects using industry-standard tools and workflows.</li>
+        </ul>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Experience -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+      <div class="entry">
+        <div class="entry-header">
+          <span class="entry-title">Sales</span>
+        </div>
+        <div class="entry-sub">Previous Role</div>
+        <ul>
+          <li>Developed strong client communication and relationship-building skills.</li>
+          <li>Worked consistently toward targets in a results-driven environment.</li>
+          <li>Transitioned to tech, applying the same discipline and client-first mindset to software development.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
